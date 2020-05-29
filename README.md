@@ -1,1 +1,2 @@
-Mi sitio web Aplicaciones Ofimáticas
+---
+permalink: /index.html

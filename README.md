@@ -1,1 +1,1 @@
-Mi sitio web Ofimática
+Mi sitio web Aplicaciones Ofimáticas

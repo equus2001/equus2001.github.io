@@ -1,0 +1,64 @@
+<html>
+<h1>
+Formulario
+</h1>
+<p>Esto es un proyecto.</p>
+<form>
+	<label for="fname">Nombre y apellidos:</label><br><br>
+	<input type="text" id="fname" name="fname" required placeholder="Introduce tu nombre y apellidos."><br><br>
+	<lavel for="lemail">Email:</label><br><br>
+	<input type="text" id="lemail" name="lname" required placeholder="Introduce tu email."><br><br>
+	<label for="number">Edad:</label><br><br>
+	<input type="number" id="number" name="number" min="18" max="99" required placeholder="Introduce tu edad."><br><br>
+	<label for="browsers">¿Qué opción describe mejor tu rol actual?</label><br><br>
+	<input list="browsers" name="browsers" required placeholder="Introduce una opción."><br><br>
+	<datalist id="browsers">
+		<option value="Estudiante">
+		<option value="Trabajo a tiempo completo">
+		<option value="Aprendiz a tiempo completo">
+		<option value="Prefiero no decirlo">
+		<option value="Otro">
+	</datalist>
+	<label for="choose">¿Recomendarías este sitio web a un amigo?</label><br><br>
+		<input type="radio" id="Seguro" name="choose" value="Seguro">
+  		<label for="Seguro">Seguro</label><br>
+  		<input type="radio" id="Tal vez" name="choose" value="Tal vez">
+		<label for="Tal vez">Tal vez</label><br>
+		<input type="radio" id="No estoy seguro" name="Choose" value="No estoy seguro">
+		<label for="No estoy seguro">No estoy seguro</label><br><br>
+	<label for="favorite">¿Cuál es tu característica favorita de este sitio web?</label><br><br>
+	<input list="browsers1" name="browser1" required placeholder="Selecciona una opción."><br><br>
+	<datalist id="browsers1">
+		<option value="Cambios">
+   		<option value="Proyectos">
+		<option value="Comunidad">
+	</datalist>		
+	<label for="choose2">¿Qué te gustaría ver mejorado?</label><br><br>
+		<input type="checkbox" id="mejora1" name="mejora1" value="Proyectos front-end">
+		<label for="mejora1">Proyectos front-end</label><br>
+		<input type="checkbox" id="mejora2" name="mejora2" value="Proyectos de fondo">
+		<label for="mejora2">Proyectos de fondo</label><br>
+		<input type="checkbox" id="mejora3" name="mejora3" value="Visualización de datos">
+		<label for="mejora3">Visualización de datos</label><br>
+		<input type="checkbox" id="mejora4" name="mejora4" value="Desafíos">
+		<label for="mejora4">Desafíos</label><br>
+		<input type="checkbox" id="mejora5" name="mejora5" value="Comunidad de código abierto">
+		<label for="mejora5">Comunidad de código abierto</label><br>
+		<input type="checkbox" id="mejora6" name="mejora6" value="Salas de ayuda Gitter">
+		<label for="mejora6">Salas de ayuda Gitter</label><br>
+		<input type="checkbox" id="mejora7" name="mejora7" value="Videos">
+		<label for="mejora7">Videos</label><br>
+		<input type="checkbox" id="mejora8" name="mejora8" value="Meetups de ciudad">
+		<label for="mejora8">Meetups de ciudad</label><br>
+		<input type="checkbox" id="mejora9" name="mejora9" value="Wiki">
+		<label for="mejora9">Wiki</label><br>
+		<input type="checkbox" id="mejora10" name="mejora10" value="Foro">
+		<label for="mejora10">Foro</label><br>
+		<input type="checkbox" id="mejora11" name="mejora11" value="Cursos adicionales">
+		<label for="mejora11">Cursos adicionales</label><br><br>
+	<label for="cuadro">¿Algún comentario o sugerencia?</label><br><br>
+	<textarea name="message" rows="10" cols="30">Introduce un comentario o una sugerencia.</textarea>
+  	<br><br>
+	<input type="submit">
+</form>
+</html>

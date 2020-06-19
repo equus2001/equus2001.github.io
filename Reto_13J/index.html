@@ -102,7 +102,7 @@
    <section id="hello_world">
       <h2>Hello World</h2>
       <p>Para comenzar a escribir JavaScript, abra el Bloc de notas y escriba su primer código JavaScript "Hola mundo":</p>
-      <table style="width:75%">
+      <table style="width:50%">
       <tr>
       <th>function greetMe(yourName) { alert("Hello " + yourName); } <div> greetMe("World"); </div></th>
       </tr>
@@ -118,21 +118,21 @@
      <section id="declarando_variables">
         <h2>Declaring variables</h2>
         <p>Puede declarar una variable de tres maneras:<div>Con la palabra clave var. Por ejemplo,</p>
-        <table style="width:17%">
+        <table style="width:10%">
         <tr>
         <th>var x = 42</th>
         </tr>
         </table>
         <p>Esta sintaxis se puede usar para declarar variables locales y globales.</p>
         <p>Simplemente asignándole un valor. Por ejemplo,</p>
-        <table style="width:15%">
+        <table style="width:10%">
         <tr>
         <th>x = 42</th>
         </tr>
         </table>
         <p>Esto siempre declara una variable global. Genera una advertencia estricta de JavaScript. No deberías usar esta variante.</p>
         <p>Con la palabra clave let. Por ejemplo,</p>
-        <table style="width:15%">
+        <table style="width:10%">
         <tr>
         <th> let y = 13</th>
         </tr>
@@ -142,13 +142,13 @@
       <section id="variable_scope">
          <h2>Variable scope</h2>
          <p>JavaScript anterior a ECMAScript 2015 no tiene alcance de declaración de bloque; más bien, una variable declarada dentro de un bloque es local a la función (o alcance global) dentro de la cual reside el bloque. Por ejemplo, el siguiente código registrará 5, porque el alcance de x es la función (o contexto global) dentro del cual se declara x, no el bloque, que en este caso es una declaración if.</p>
-         <table style="width:55%">
+         <table style="width:40%">
          <tr>
          <th>if (verdadero) {var x = 5; } console.log (x); // 5</th>
          </tr>
          </table>
          <p>Este comportamiento cambia cuando se utiliza la declaración let introducida en ECMAScript 2015.</p>
-         <table style="width:90%">
+         <table style="width:50%">
          <tr>
          <th>if (verdadero) {let y = 5; } console.log (y); // ReferenceError: y is not defined</th>
          </tr>

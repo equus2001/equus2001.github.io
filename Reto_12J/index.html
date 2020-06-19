@@ -1,0 +1,161 @@
+<html>
+<head>
+  <style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #ffffff;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    display: block;
+    border-right: inset;
+    border-width: 3px;
+    font-family:Arial;
+    font-size: 17px;
+  }
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: left;
+  padding: 15px;
+  background-color: #dcdcdc;
+  color: black;
+  font-family:Arial;
+  font-size: 15px;
+  }
+  main{
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     margin-left: 250px;
+     padding:0;
+     color:#000000;
+     background:#ffffff;
+     font-family:Arial;
+     font-size: 17px;
+   }
+   body{
+     background:#ffffff;
+   }
+  </style>
+</head>
+<header class="navbar navbar-default navbar-fixed-top" id="banner">
+      <nav class="collapse navbar-collapse" id="main-doc" role="navigation">
+        <ul class="nav navbar-nav navbar-right">
+          <h2>Documentación técnica</h2>
+          <hr class="star-dark"/>
+          <a class="scrollable" href="#introduccion">Introducción</a><div>
+          <hr class="star-dark"/>
+          <a class="scrollable" href="#lo_que_deberias_saber">Lo que deberías saber</a><div>
+          <hr class="star-dark"/>
+          <a class="scrollable" href="#JavaScript_and_Java">JavaScript y Java</a><div>
+          <hr class="star-dark"/>
+          <a class="scrollable" href="#hello_world">Hello World</a><div>
+          <hr class="star-dark"/>
+          <a class="scrollable" href="#variables">Variables</a><div>
+          <hr class="star-dark"/>
+          <a class="scrollable" href="#declarando_variables">Declaring variables</a><div>
+          <hr class="star-dark"/>
+          <a class="scrollable" href="#variable_scope">Variable scope</a><div>
+          <hr class="star-dark"/>
+          <a class="scrollable" href="#variables_globales">Global variables</a><div>
+          <hr class="star-dark"/>
+          <a class="scrollable" href="#documentacion">Documentación</a><div>
+          <hr class="star-dark"/>
+        </ul>
+      </nav>
+    </div>
+</header>
+<main>
+  <section id="introduccion">
+    <h2>Introducción</h2>
+    <p>JavaScript es un lenguaje de secuencias de comandos orientado a objetos y multiplataforma. Es un lenguaje pequeño y ligero. Dentro de un entorno host (por ejemplo, un navegador web), JavaScript se puede conectar a los objetos de su entorno para proporcionar un control programático sobre ellos.</p>
+    <p>JavaScript contiene una biblioteca estándar de objetos, como Array, Date y Math, y un conjunto básico de elementos del lenguaje, como operadores, estructuras de control y declaraciones. El núcleo de JavaScript se puede extender para una variedad de propósitos al complementarlo con objetos adicionales; por ejemplo:</p>
+    <dl>
+    <li>JavaScript del lado del cliente extiende el lenguaje central al proporcionar objetos para controlar un navegador y su Modelo de Objetos de Documento (DOM). Por ejemplo, las extensiones del lado del cliente permiten que una aplicación coloque elementos en un formulario HTML y responda a eventos del usuario, como clics del mouse, ingreso de formularios y navegación de página.</li>
+    <li>JavaScript del lado del servidor amplía el lenguaje principal al proporcionar objetos relevantes para ejecutar JavaScript en un servidor. Por ejemplo, las extensiones del lado del servidor permiten que una aplicación se comunique con una base de datos, proporcionan continuidad de información de una invocación a otra de la aplicación o realizan manipulaciones de archivos en un servidor.</li>
+    </dl>
+ </section>
+ <section id="lo_que_deberias_saber">
+    <h2>Lo que deberías saber</h2>
+    <p>Esta guía asume que tiene los siguientes antecedentes básicos:</p>
+    <dl>
+    <li>Una comprensión general de Internet y la World Wide Web (WWW).</li>
+    <li>Buen conocimiento práctico del lenguaje de marcado de hipertexto (HTML).</li>
+    <li>Alguna experiencia en programación. Si eres nuevo en la programación, prueba uno de los tutoriales vinculados en la página principal sobre JavaScript.</li>
+  </dl>
+  </section>
+  <section id="JavaScript_and_Java">
+     <h2>JavaScript y Java</h2>
+     <p>JavaScript y Java son similares en algunos aspectos, pero fundamentalmente diferentes en otros. El lenguaje JavaScript se parece a Java, pero no tiene la escritura estática de Java y la verificación de tipos fuertes. JavaScript sigue la mayoría de la sintaxis de expresiones Java, las convenciones de nomenclatura y las construcciones básicas de flujo de control, razón por la cual se le cambió el nombre de LiveScript a JavaScript.</p>
+     <p>A diferencia del sistema de clases de tiempo de compilación de Java creado por declaraciones, JavaScript admite un sistema de tiempo de ejecución basado en una pequeña cantidad de tipos de datos que representan valores numéricos, booleanos y de cadena. JavaScript tiene un modelo de objeto basado en prototipo en lugar del modelo de objeto basado en clase más común. El modelo basado en prototipos proporciona herencia dinámica; es decir, lo que se hereda puede variar para objetos individuales. JavaScript también admite funciones sin ningún requisito declarativo especial. Las funciones pueden ser propiedades de objetos, ejecutándose como métodos tipados libremente.</p>
+     <p>JavaScript es un lenguaje de forma muy libre en comparación con Java. No tiene que declarar todas las variables, clases y métodos. No tiene que preocuparse por si los métodos son públicos, privados o protegidos, y no tiene que implementar interfaces. Las variables, los parámetros y los tipos de retorno de funciones no se escriben explícitamente.</p>
+   </section>
+   <section id="hello_world">
+      <h2>Hello World</h2>
+      <p>Para comenzar a escribir JavaScript, abra el Bloc de notas y escriba su primer código JavaScript "Hola mundo":</p>
+      <table style="width:75%">
+      <tr>
+      <th>function greetMe(yourName) { alert("Hello " + yourName); } <div> greetMe("World"); </div></th>
+      </tr>
+      </table>
+      <p>¡Selecciona el código en el pad y presiona Ctrl + R para ver cómo se desarrolla en tu navegador!</p>
+    </section>
+    <section id="variables">
+       <h2>Variables</h2>
+       <p>Utiliza variables como nombres simbólicos para valores en su aplicación. Los nombres de las variables, llamados identificadores, se ajustan a ciertas reglas.</p>
+       <p>Un identificador de JavaScript debe comenzar con una letra, un guión bajo (_) o un signo de dólar ($); Los caracteres posteriores también pueden ser dígitos (0-9). Debido a que JavaScript distingue entre mayúsculas y minúsculas, las letras incluyen los caracteres "A" a "Z" (mayúsculas) y los caracteres "a" a "z" (minúsculas).</p>
+       <p>Puede usar ISO 8859-1 o letras Unicode como å y ü en los identificadores. También puede usar las secuencias de escape Unicode como caracteres en los identificadores. Algunos ejemplos de nombres legales son Number_hits, temp99 y _name.</p>
+     </section>
+     <section id="declarando_variables">
+        <h2>Declaring variables</h2>
+        <p>Puede declarar una variable de tres maneras:<div>Con la palabra clave var. Por ejemplo,</p>
+        <table style="width:17%">
+        <tr>
+        <th>var x = 42</th>
+        </tr>
+        </table>
+        <p>Esta sintaxis se puede usar para declarar variables locales y globales.</p>
+        <p>Simplemente asignándole un valor. Por ejemplo,</p>
+        <table style="width:15%">
+        <tr>
+        <th>x = 42</th>
+        </tr>
+        </table>
+        <p>Esto siempre declara una variable global. Genera una advertencia estricta de JavaScript. No deberías usar esta variante.</p>
+        <p>Con la palabra clave let. Por ejemplo,</p>
+        <table style="width:15%">
+        <tr>
+        <th> let y = 13</th>
+        </tr>
+        </table>
+        <p>Esta sintaxis se puede usar para declarar una variable local de ámbito de bloque. Ver alcance variable a continuación.</p>
+      </section>
+      <section id="variable_scope">
+         <h2>Variable scope</h2>
+         <p>JavaScript anterior a ECMAScript 2015 no tiene alcance de declaración de bloque; más bien, una variable declarada dentro de un bloque es local a la función (o alcance global) dentro de la cual reside el bloque. Por ejemplo, el siguiente código registrará 5, porque el alcance de x es la función (o contexto global) dentro del cual se declara x, no el bloque, que en este caso es una declaración if.</p>
+         <table style="width:55%">
+         <tr>
+         <th>if (verdadero) {var x = 5; } console.log (x); // 5</th>
+         </tr>
+         </table>
+         <p>Este comportamiento cambia cuando se utiliza la declaración let introducida en ECMAScript 2015.</p>
+         <table style="width:90%">
+         <tr>
+         <th>if (verdadero) {let y = 5; } console.log (y); // ReferenceError: y is not defined</th>
+         </tr>
+         </table>
+      </section>
+      <section id="variables_globales">
+         <h2>Global variables</h2>
+         <p>Las variables globales son, de hecho, propiedades del objeto global. En las páginas web, el objeto global es window, por lo que puede establecer y acceder a variables globales utilizando la sintaxis window.variable.</p>
+         <p>En consecuencia, puede acceder a las variables globales declaradas en una ventana o marco desde otra ventana o marco especificando la ventana o el nombre del marco. Por ejemplo, si una variable llamada phoneNumber se declara en un documento, puede referirse a esta variable desde un iframe como parent.phoneNumber.</p>
+      </section>
+      <section id="variables_globales">
+         <h2>Documentación</h2>
+         <p>Este link es el código de la página web</p>
+         
+      </section>
